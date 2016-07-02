@@ -19,20 +19,21 @@ ignore_first = false
 is_first = true
 mypl = nil
 
--- Feel free to enter your favourite episodes in the format {"Name",Start,End} and to share those numbers on the addon page http://addons.videolan.org/content/show.php?content=159976.
-predefined={{"---",0,0,false},{"Game of Thrones",203,78,false},{"Dexter",106,45,false},{"House of Cards",54,114,true}}
+-- format {"Name",Start,End}
+predefined={{"---",0,0,false},{"these will be removed",203,78,false},{"in favor of a file input",106,45,false},{"for better modularity",54,114,true}}
 
 
 
 function descriptor()
 	return {
-		title = "Intro and credits Skipper";
-		version = "0.9";
-		author = "Bergur Hallgrimsson";
-		url = 'http://addons.videolan.org/content/show.php?content=159976';
-		shortdesc = "Skip intro";
-		description = "Define the length of intro and credits for your favourite episode. Queue them up in the playlist and jump right into the episode and avoid having to see the intro and credits.";
+		title = "FilterContent";
+		version = "0.0";
+		author = "James Christensen";
+		url = 'http://github.com/janchor/FilterContent';
+		shortdesc = "Remove bad stuff";
+		description = "Description";
 		capabilities = {"input-listener"}
+--		what does capabilities do?
 	}
 end
 
